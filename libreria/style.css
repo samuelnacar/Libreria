@@ -1,0 +1,274 @@
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,* :before, *:after {
+    box-sizing: inherit;
+}
+
+html, body, header, {
+ max-width: 100%;
+ overflow-x: hidden;
+ position: relative;
+ margin: 0;
+}
+/*
+header{display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows:200px 100px;
+width: 100%} */
+
+header{background-color: #e7e5e4;
+}
+
+
+/*logo 
+
+
+
+@media(max-width: 600px) {.logo{
+		position: relative;
+	display:inline-block;
+max-width:200px;
+padding:15px 15px 10px 30px;
+  transition: 0.4;
+  -webkit-transition: 0.4s;
+  -webkit-transform: rotate(10deg);
+background-color: #fffff0;
+}} */
+
+h1 {display:inline-block;
+position:relative;
+margin-top: 10px;
+margin-left: 0px;
+float:center;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 8vw;
+  padding: 15px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+    color: #131313;
+    letter-spacing: .15em;
+  
+  }
+
+ 
+ .retroshadow {
+    color: #2c2c2c;
+   letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+/* titulo .svg{min-width: 15vw} */
+
+
+
+
+
+.log-in{/*grid-column: 3;
+	grid-template-rows:1;*/
+	display:inline-block;
+	margin-top:25px;
+	margin-right: 25px;
+	float:right;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 12px;
+	
+}
+.sign-in{text-decoration: none;
+	color: white;
+	background-color: 	#808080;
+	border-radius:100px;
+padding: 15px;
+margin:3vw;}
+
+.sign-out{
+	padding:15px;
+	text-decoration: none;
+	color: white;
+	background-color: #808080 ;
+	border-radius:100px;
+margin:5px;
+margin-bottom: 0px
+}
+
+.sign-in:hover{background-color:#808055 }
+.sign-out:hover{background-color:#808055 }
+
+
+@media (max-width: 656px){.log-in{
+	font-size: 2vw;
+margin:0 auto;
+margin-top: 5vw;
+float:right;
+margin-left: 5vw}
+}
+@media (max-width: 656px) {.sign-in{ 
+	background-color:#808080;
+	border-radius:10px;
+	padding:5px;
+	margin:0px;}
+}
+
+	@media (max-width: 656px){.sign-out{
+	background-color:#808080;
+	border-radius:10px;
+	padding:5px;
+	margin:5px;
+}}
+
+/*nav*/
+
+ul{
+
+	background-color: #f3f3f3;
+	width: 100%;
+	list-style: none;
+	display: inline-block;
+	float:center;
+
+}
+li {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	float:left;
+border: 20px;
+font-size:14px }
+
+li a{
+	display:inline-block;
+padding:10px;
+text-decoration: none;
+color:black;
+}
+
+li a:hover{background-color: orange}
+
+/*nav*/
+
+@media (max-width:430px){
+	li{font-size: 10px}
+}
+
+@media (max-width:430px){li a{
+	padding: 5px
+	}}
+
+section {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+    }
+
+.media { 
+   width:23vw;
+   margin: 10px;
+}
+
+
+img {
+   width: 20vw;
+   max-width: 100%; 
+   max-height: 450px;
+
+ }
+
+
+.media:hover img{z-index: -2;
+ 	transition-duration: 0.7s;
+ 	width:27vw;
+ 	opacity:0.5;
+ } 
+
+ 
+
+ .texto{
+ 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+   font-size: 2.5vw;
+  max-width: 21%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  background-color: #f3f3f3;
+  width: 100%
+
+ }
+
+ .overlay {
+ 	opacity: 0;
+  transition: .5s ease;
+   height: 100%;
+  width:100%;
+}
+
+.media:hover .overlay {
+  opacity: 1;
+
+}
+
+
+
+/*
+@media(min-width:800px) {
+ 	
+ 	section{
+ 		justify-content: space-around;
+ 		width: 80%;
+ 		margin: 0 auto;
+ 	}
+
+ 	img{
+ 		width:18vw;
+ 	}
+
+ 	img:hover{
+ 	transition-duration: 0.7s;
+ 	width:20vw; }
+ }
+*/
+
+
+ /*contenedor libros*/
+
+ .loremipsum{
+ 	margin:50px;
+ 	width:80%;
+ 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+font-size:12px;
+text-align: justify;}
+
+
+
+
+
+footer{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	width:100%;
+    bottom: 0;
+    margin: 0 auto;
+	text-align: center;
+	background-color:#d3d3d3;
+	max-width: 100%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
